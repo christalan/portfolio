@@ -1,0 +1,9 @@
+<div class="rounded d-flex p-3 border border-black mt-3">
+  <h3>Tecnologias</h3>
+</div>
+
+<div class="rounded d-flex flex-wrap mt-3">
+  <div *ngFor="let tech of techs" class="m-2">
+    <img [src]="tech.name" [title]="tech.alt">
+  </div>
+</div>
