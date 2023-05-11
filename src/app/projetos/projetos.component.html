@@ -1,10 +1,11 @@
-<div class="rounded d-flex p-3 border border-black mt-3">
+<div class="d-flex border-bottom my-4">
   <h3>Projetos</h3>
 </div>
-<div class="rounded d-flex my-3 row">
+
+<div class="d-flex my-3 row">
   <div *ngFor="let project of projects" class="col-md-4 col-12">
     <a href="{{ project.link }}">
-      <img class="my-3 w-100 border border-black" [src]="project.img">
+      <img class="my-3 w-100" [src]="project.img">
     </a>
   </div>
 </div>
