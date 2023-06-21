@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'projetos',
@@ -17,43 +17,5 @@ export class ProjetosComponent implements OnInit {
     // { "img": "../../assets/em breve.png", "link": "#" },
   ];
 
-  currentPage = 0;
-  pageSize = 3;
-  displayedProjects!: any[];
-
-  ngOnInit() {
-    this.setPageSize();
-    this.displayedProjects = this.projects.slice(0, this.pageSize);
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.setPageSize();
-    this.updateDisplayedProjects();
-  }
-
-  setPageSize() {
-    const isMobile = window.innerWidth <= 767;
-    this.pageSize = isMobile ? 1 : 3;
-  }
-
-  nextPage() {
-    const totalPages = Math.ceil(this.projects.length / this.pageSize);
-    if (this.currentPage < totalPages - 1) {
-      this.currentPage++;
-      this.updateDisplayedProjects();
-    }
-  }
-
-  previousPage() {
-    if (this.currentPage > 0) {
-      this.currentPage--;
-      this.updateDisplayedProjects();
-    }
-  }
-
-  updateDisplayedProjects() {
-    const startIndex = this.currentPage * this.pageSize;
-    this.displayedProjects = this.projects.slice(startIndex, startIndex + this.pageSize);
-  }
+  ngOnInit() { }
 }
