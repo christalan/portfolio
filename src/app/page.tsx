@@ -22,18 +22,18 @@ export default function Home() {
       <div className={styles.second_flex}>
         <h1>Trabalhos em Destaque</h1>
         <p>Alguns dos meus trabalhos selecionados e projetos pessoais</p>
-        <a href="https://pokedex-ma9r.onrender.com/">
-          <img src="/pokedex.png" className={styles.image} />
-        </a>
-        <a href="https://rocket-coffee.onrender.com/">
-          <img src="/coffee.png" className={styles.image} />
-        </a>
-        <a href="https://consulta-de-cep.onrender.com/">
-          <img src="/cep.png" className={styles.image} />
-        </a>
-        <a href="https://calculadora-t4wb.onrender.com/">
-          <img src="/calculadora.png" className={styles.image} />
-        </a>
+          <a href="https://pokedex-ma9r.onrender.com/">
+            <img src="/pokedex.png" className={styles.image} />
+          </a>
+          <a href="https://rocket-coffee.onrender.com/">
+            <img src="/coffee.png" className={styles.image} />
+          </a>
+          <a href="https://consulta-de-cep.onrender.com/">
+            <img src="/cep.png" className={styles.image} />
+          </a>
+          <a href="https://calculadora-t4wb.onrender.com/">
+            <img src="/calculadora.png" className={styles.image} />
+          </a>
       </div>
 
     </main >
