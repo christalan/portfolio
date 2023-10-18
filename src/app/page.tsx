@@ -8,7 +8,7 @@ export default function Home() {
         <div>
           <h1>Olá. <br />
             Eu sou o Alan.</h1>
-          <p>Um desenvolvedor fullstack: criando soluções digitais de qualidade.</p>
+          <p>Um desenvolvedor fullstack, criando soluções digitais de qualidade.</p>
           <a href="https://api.whatsapp.com/send?phone=3491543214">
             <button className={styles.button}>Contato</button>
           </a>
